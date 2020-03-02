@@ -19,10 +19,10 @@
     </div>
     <div class="form-group">
         <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-default active">
+            <label class="btn btn-default @(@Model.SelectedTextType == SEOAnalyser.Models.AnalyserModel.TextType.Url ? "active" : "") " >
                 @Html.RadioButtonFor(m => m.SelectedTextType, "Url", new { id = "Url" }) Url
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default @(@Model.SelectedTextType == SEOAnalyser.Models.AnalyserModel.TextType.Text ? "active" : "")">
                 @Html.RadioButtonFor(m => m.SelectedTextType, "Text", new { id = "Text" }) Text
             </label>
         </div>

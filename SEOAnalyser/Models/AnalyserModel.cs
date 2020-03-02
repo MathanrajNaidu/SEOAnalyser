@@ -13,7 +13,7 @@ namespace SEOAnalyser.Models
         [DataType(DataType.MultilineText)]
         public string Text { get; set; }
 
-        public TextType SelectedTextType { get; set; } = TextType.Url;
+        public TextType SelectedTextType { get; set; }
 
         public enum TextType {
             Url,

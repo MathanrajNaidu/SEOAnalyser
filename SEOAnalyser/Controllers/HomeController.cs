@@ -17,7 +17,9 @@ namespace SEOAnalyser.Controllers
     {
         public ActionResult Index(Models.AnalyserModel input)
         {
-            var model = new Models.AnalyserModel();
+            var model = new Models.AnalyserModel() { 
+                SelectedTextType = input.SelectedTextType
+            };
             var metaTagsBuilder = new StringBuilder();
             string allText = string.Empty;
             var url = string.Empty;           
