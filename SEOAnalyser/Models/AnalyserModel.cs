@@ -20,8 +20,6 @@ namespace SEOAnalyser.Models
             Text
         }
 
-        public string Error { get; set; }
-
         public Dictionary<string, int> Words { get; set; }
 
         public Dictionary<string, int> MetaTagWords { get; set; }

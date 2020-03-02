@@ -51,7 +51,6 @@ namespace SEOAnalyser.Controllers
                         }
                     } catch (Exception ex)
                     {
-                        model.Error = ex.Message;
                         ModelState.AddModelError("Text", ex.Message);
                     }
                 }
